@@ -8,7 +8,6 @@ const NOMINATIM_BASE = 'https://nominatim.openstreetmap.org';
 const GOOGLE_PLACES_BASE = 'https://maps.googleapis.com/maps/api/place';
 const USE_PLACES_API = import.meta.env.VITE_USE_PLACES_API !== 'false'; // Default to true
 
-
 interface PlaceSearchCache {
   query: string;
   results: PlacesSuggestion[];

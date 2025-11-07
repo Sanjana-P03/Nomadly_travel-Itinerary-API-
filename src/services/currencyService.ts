@@ -24,7 +24,6 @@ const getMockRate = (from: string, to: string): number => {
   return mockRates[from]?.[to] || 1;
 };
 
-
 let ratesCache: { data: Record<string, number>; base: string; timestamp: number } | null = null;
 const CACHE_DURATION = 60 * 60 * 1000; // 1 hour
 
